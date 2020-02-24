@@ -37,6 +37,16 @@ document.getElementById("heart").addEventListener("click",function() {
       addLikes();
     }
   }
+  
+  function addLikes() {
+    for (let i = 0; i < liArray; i++) {
+      let currentNum = liArray[i].innerText.split(" ")[0];
+      let likeCount = liArray[i].innerText.split(" ")[4];
+      if (currentNum === num) {
+        likes.removeChild(liArray[i]);
+      }
+    }
+  }
 });
 
 // document.getElementById("heart").addEventListener("click", () => {
