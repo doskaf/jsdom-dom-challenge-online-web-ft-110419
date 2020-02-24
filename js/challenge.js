@@ -5,7 +5,6 @@ function addSecond() {
   let counterNum = parseInt(counter.innerText);
   counter.textContent = counterNum + 1;
 }
-
 function subtractSecond() {
   let counter = document.getElementById("counter");
   let counterNum = parseInt(counter.innerText);
