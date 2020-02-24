@@ -1,3 +1,5 @@
+setInterval(addSecond, 1000);
+
 function addSecond() {
   let counter = document.getElementById("counter");
   let counterNum = parseInt(counter.innerText);
@@ -10,12 +12,9 @@ function subtractSecond() {
   counter.textContent = counterNum - 1;
 }
 
-let secondCounter = setInterval(addSecond, 1000);
-
 document.getElementById("plus").addEventListener("click", function() {
   addSecond();
 });
-
 document.getElementById("minus").addEventListener("click", function() {
   subtractSecond();
 });
