@@ -45,8 +45,8 @@ document.getElementById("heart").addEventListener("click",function() {
         newLi.innerText = `${num} has been liked ${likeCount + 1} time(s)`;
         likes.appendChild(newLi);
       } else if (numInLi !== num.innerText) {
-        li.innerText = `${counter} has been liked ${n} times`;
-        ul.appendChild(li);
+        newLi.innerText = `${num} has been liked ${like} times`;
+        likes.appendChild(newLi);
       }
     }
   }
