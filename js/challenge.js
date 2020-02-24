@@ -26,7 +26,7 @@ document.getElementById("heart").addEventListener("click",function() {
   let liArray = likes.querySelectorAll("li")
   let newLi = document.createElement("LI");
   let text = document.createTextNode(`${num} is great!`);
-  newLi.innerText = ;
+  newLi.appendChild(text);
   likes.appendChild(li);
 });
 
