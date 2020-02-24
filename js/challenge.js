@@ -38,9 +38,9 @@ document.getElementById("heart").addEventListener("click",function() {
   
   function addLikes() {
     for (let i = 0; i < liArray; i++) {
-      let currentNum = liArray[i].innerText.split(" ")[0];
+      let numInLi = liArray[i].innerText.split(" ")[0];
       let likeCount = liArray[i].innerText.split(" ")[4];
-      if (currentNum === num) {
+      if (numInLi === num) {
         likes.removeChild(liArray[i]);
         newLi.innerText = `${num} has been liked ${likeCount + 1} time(s)`;
         likes.appendChild(newLi);
