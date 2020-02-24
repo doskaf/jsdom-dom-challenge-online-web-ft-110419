@@ -1,7 +1,7 @@
 let paused = false;
 
 setInterval(function() {
-  if (paused) {
+  if (!paused) {
     addSecond();
   }
 }, 1000);
