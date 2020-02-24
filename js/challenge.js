@@ -1,6 +1,9 @@
 let paused = false;
 
-setInterval(function(), 1000);
+setInterval(function() {
+  addSecond();
+  
+}, 1000);
 
 function addSecond() {
   let counter = document.getElementById("counter");
