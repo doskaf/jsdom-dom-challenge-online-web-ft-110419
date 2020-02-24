@@ -37,7 +37,7 @@ document.getElementById("heart").addEventListener("click",function() {
   }
   
   function addLikes() {
-    for (let i = 0; i < liArray; i++) {
+    for (let i = 0; i < liArray.length; i++) {
       let numInLi = liArray[i].innerText.split(" ")[0];
       let likeCount = liArray[i].innerText.split(" ")[4];
       if (numInLi === num) {
