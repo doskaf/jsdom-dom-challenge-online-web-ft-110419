@@ -23,7 +23,7 @@ document.getElementById("minus").addEventListener("click", function() {
 document.getElementById("heart").addEventListener("click",function() {
   let num = document.getElementById("counter").innerText;
   let likes = document.querySelector(".likes");
-  let liArray = document.querySelector("ul").querySelectorAll("li");
+  let liArray = document.likes.querySelectorAll("li");
   let newLi = document.createElement("LI");
   newLi.innerText = `${num} is great!`;
   likes.appendChild(newLi);
