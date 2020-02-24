@@ -27,7 +27,13 @@ document.getElementById("heart").addEventListener("click",function() {
   let newLi = document.createElement("LI");
   newLi.innerText = `${num} is great!`;
   likes.appendChild(newLi);
-  let likeNum = 1;
+  let numOfLikes = 1;
+  
+  function like() {
+    if (liArray.length === 0) {
+      newLi.innerText = `${num} has been liked ${numOfLikes} times`;
+    }
+  }
 });
 
 // document.getElementById("heart").addEventListener("click", () => {
