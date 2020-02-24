@@ -53,5 +53,10 @@ document.getElementById("heart").addEventListener("click",function() {
 
 document.getElementById("pause").addEventListener("click",function() {
   let pause = document.getElementById("pause");
-  if pause.innerText = "pause"
+  if (pause.innerText === "pause") {
+    pause.innerText = "resume";
+    
+  } else if (pause.innerText === "resume") {
+    
+  }
 });
