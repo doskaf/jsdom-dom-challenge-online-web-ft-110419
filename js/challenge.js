@@ -1,3 +1,5 @@
+let paused = false;
+
 setInterval(addSecond, 1000);
 
 function addSecond() {
