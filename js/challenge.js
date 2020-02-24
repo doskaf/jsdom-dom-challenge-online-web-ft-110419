@@ -74,3 +74,6 @@ document.getElementById("pause").addEventListener("click",function() {
   }
 });
 
+document.getElementById("submit").addEventListener("click",function() {
+  
+});
