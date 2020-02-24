@@ -31,7 +31,7 @@ document.getElementById("heart").addEventListener("click",function() {
     if (liArray.length === 0) {
       newLi.innerText = `${num} has been liked ${like} times`;
       likes.appendChild(newLi);
-    } else {
+    } else if (liArray.length > 0) {
       addLikes();
     }
   }
