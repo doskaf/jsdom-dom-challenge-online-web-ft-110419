@@ -1,5 +1,3 @@
-let paused = false;
-
 setInterval(function() {
   if (!paused) {
     addSecond();
@@ -63,6 +61,6 @@ document.getElementById("pause").addEventListener("click",function() {
     pause.innerText = "resume";
     paused = true;
   } else if (pause.innerText === "resume") {
-    console.log("ok");
+    pause.innerText = 
   }
 });
