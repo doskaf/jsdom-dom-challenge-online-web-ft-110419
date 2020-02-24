@@ -32,6 +32,9 @@ document.getElementById("heart").addEventListener("click",function() {
   function like() {
     if (liArray.length === 0) {
       newLi.innerText = `${num} has been liked ${numOfLikes} times`;
+      likes.appendChild(newLi);
+    } else if (liArray.length > 0) {
+      
     }
   }
 });
