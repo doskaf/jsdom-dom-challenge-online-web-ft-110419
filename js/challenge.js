@@ -29,12 +29,12 @@ document.getElementById("heart").addEventListener("click",function() {
   likes.appendChild(newLi);
   let numOfLikes = 1;
   
-  function like() {
+  function clickHeart() {
     if (liArray.length === 0) {
       newLi.innerText = `${num} has been liked ${numOfLikes} times`;
       likes.appendChild(newLi);
-    } else if (liArray.length > 0) {
-      
+    } else {
+      addLikes();
     }
   }
 });
