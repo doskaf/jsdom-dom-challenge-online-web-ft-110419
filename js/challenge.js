@@ -47,6 +47,7 @@ document.getElementById("heart").addEventListener("click",function() {
       }
     }
   }
+  clickHeart();
 });
 
 // document.getElementById("heart").addEventListener("click", () => {
