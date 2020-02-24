@@ -73,10 +73,10 @@ document.getElementById("pause").addEventListener("click",function() {
     document.getElementById("heart").disabled = false;
   }
 });
-comment-input
+
 document.getElementById("submit").addEventListener("click",function(event) {
   let comments = document.querySelector(".comments");
-  let commentContent = document
+  let commentContent = document.getElementById("comment-input").value;
   let newComment = document.createElement("LI");
   newComment.innerText = ``;
 }, false);
