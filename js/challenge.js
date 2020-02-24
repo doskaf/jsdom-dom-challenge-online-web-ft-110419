@@ -76,4 +76,5 @@ document.getElementById("pause").addEventListener("click",function() {
 comment-input
 document.getElementById("submit").addEventListener("click",function(event) {
   let comments = document.querySelector(".comments");
+  let newComment = document.createElement
 }, false);
