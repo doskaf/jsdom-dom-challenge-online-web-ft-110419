@@ -25,11 +25,11 @@ document.getElementById("heart").addEventListener("click",function() {
   let likes = document.querySelector(".likes");
   let liArray = likes.querySelectorAll("li");
   let newLi = document.createElement("LI");
-  let numOfLikes = 1;
+  let like = 1;
   
   function clickHeart() {
     if (liArray.length === 0) {
-      newLi.innerText = `${num} has been liked ${numOfLikes} times`;
+      newLi.innerText = `${num} has been liked ${like} times`;
       likes.appendChild(newLi);
     } else {
       addLikes();
@@ -44,6 +44,8 @@ document.getElementById("heart").addEventListener("click",function() {
         likes.removeChild(liArray[i]);
         newLi.innerText = `${num} has been liked ${likeCount + 1} time(s)`;
         likes.appendChild(newLi);
+      } else if (currentNum !== num) {
+        newLi.innerText = `${num} has been liked ${like} times`;
       }
     }
   }
