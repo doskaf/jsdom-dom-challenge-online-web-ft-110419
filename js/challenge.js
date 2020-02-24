@@ -29,7 +29,7 @@ document.getElementById("heart").addEventListener("click",function() {
   
   function clickHeart() {
     if (liArray.length === 0) {
-      newLi.innerText = `${num} has been liked ${like} time(s)`;
+      newLi.innerText = `${num} has been liked ${like}`;
       likes.appendChild(newLi);
     } else {
       addLikes();
