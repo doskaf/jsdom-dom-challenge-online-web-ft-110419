@@ -55,6 +55,7 @@ document.getElementById("heart").addEventListener("click",function() {
   clickHeart();
 });
 
+let paused = false;
 document.getElementById("pause").addEventListener("click",function() {
   let pause = document.getElementById("pause");
   if (pause.innerText === "pause") {
