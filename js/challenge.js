@@ -79,4 +79,5 @@ document.getElementById("submit").addEventListener("click",function(event) {
   let newComment = document.createElement("LI");
   newComment.innerText = document.getElementById("comment-input").value;
   comments.appendChild(newComment);
+  event.preventDefault()
 }, false);
