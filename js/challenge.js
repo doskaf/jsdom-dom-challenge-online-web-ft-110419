@@ -33,6 +33,7 @@ document.getElementById("heart").addEventListener("click",function() {
       likes.appendChild(newLi);
     } else {
       // addLikes();
+      console.log("ji")
     }
   }
   
