@@ -42,7 +42,7 @@ document.getElementById("heart").addEventListener("click",function() {
       let likeCount = liArray[i].innerText.split(" ")[4];
       if (numInLi === num) {
         likes.removeChild(liArray[i]);
-        newLi.innerText = `${num} has been liked ${likeCount++} time(s)`;
+        newLi.innerText = `${num} has been liked ${++likeCount} time(s)`;
         likes.appendChild(newLi);
       } else if (numInLi !== num.innerText) {
         newLi.innerText = `${num} has been liked ${like} time(s)`;
