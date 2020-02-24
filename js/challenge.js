@@ -73,3 +73,4 @@ document.getElementById("pause").addEventListener("click",function() {
     document.getElementById("heart").disabled = false;
   }
 });
+
