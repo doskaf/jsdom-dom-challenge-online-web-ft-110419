@@ -62,6 +62,9 @@ document.getElementById("pause").addEventListener("click",function() {
   if (pause.innerText === "pause") {
     pause.innerText = "resume";
     paused = true;
+    document.getElementById("plus").addEventListener("click", function(event) {
+      event.preventDefault()
+    });
   } else if (pause.innerText === "resume") {
     pause.innerText = "pause";
     paused = false;
