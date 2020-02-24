@@ -56,12 +56,14 @@ document.getElementById("heart").addEventListener("click",function() {
 });
 
 let paused = false;
+
 document.getElementById("pause").addEventListener("click",function() {
   let pause = document.getElementById("pause");
   if (pause.innerText === "pause") {
     pause.innerText = "resume";
     paused = true;
   } else if (pause.innerText === "resume") {
-    pause.innerText = 
+    pause.innerText = "pause";
+    paused = false;
   }
 });
