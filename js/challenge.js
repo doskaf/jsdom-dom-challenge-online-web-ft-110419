@@ -27,6 +27,7 @@ document.getElementById("heart").addEventListener("click",function() {
   let newLi = document.createElement("LI");
   newLi.innerText = `${num} is great!`;
   likes.appendChild(newLi);
+  let likeNum = 1;
 });
 
 // document.getElementById("heart").addEventListener("click", () => {
