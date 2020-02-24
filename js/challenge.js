@@ -32,7 +32,7 @@ document.getElementById("heart").addEventListener("click",function() {
       newLi.innerText = `${num} has been liked ${like} time(s)`;
       likes.appendChild(newLi);
     } else {
-      addLikes();
+      addLikes(liArray);
     }
   }
   
