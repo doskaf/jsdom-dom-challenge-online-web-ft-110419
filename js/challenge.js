@@ -29,7 +29,7 @@ document.getElementById("heart").addEventListener("click",function() {
   
   function clickHeart() {
     if (liArray.length === 0) {
-      newLi.innerText = `${num} has been liked ${like} times`;
+      newLi.innerText = `${num} has been liked ${like} time(_`;
       likes.appendChild(newLi);
     } else {
       addLikes();
@@ -45,7 +45,7 @@ document.getElementById("heart").addEventListener("click",function() {
         newLi.innerText = `${num} has been liked ${likeCount + 1} time(s)`;
         likes.appendChild(newLi);
       } else if (numInLi !== num.innerText) {
-        newLi.innerText = `${num} has been liked ${like} times`;
+        newLi.innerText = `${num} has been liked ${like} time(s)`;
         likes.appendChild(newLi);
       }
     }
