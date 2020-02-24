@@ -62,9 +62,14 @@ document.getElementById("pause").addEventListener("click",function() {
   if (pause.innerText === "pause") {
     pause.innerText = "resume";
     paused = true;
+    document.getElementById("minus").disabled = true;
     document.getElementById("plus").disabled = true;
+    document.getElementById("heart").disabled = true;
   } else if (pause.innerText === "resume") {
     pause.innerText = "pause";
     paused = false;
+    document.getElementById("minus").disabled = false;
+    document.getElementById("plus").disabled = false;
+    document.getElementById("heart").disabled = false;
   }
 });
