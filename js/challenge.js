@@ -50,3 +50,7 @@ document.getElementById("heart").addEventListener("click",function() {
   }
   clickHeart();
 });
+
+document.getElementById("pause").addEventListener("click",function() {
+  
+});
